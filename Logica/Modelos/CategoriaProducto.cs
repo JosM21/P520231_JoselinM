@@ -12,7 +12,7 @@ namespace Logica.Models
         public int CategoriaID { get; set; }
         public string CategoriaDescripcion { get; set; }
 
-        public DataTable Listar()
+        public DataTable Listar() 
         {
             DataTable R = new DataTable();
 
@@ -21,7 +21,7 @@ namespace Logica.Models
             return R;
         }
 
-
+     
 
 
 

@@ -23,8 +23,15 @@ namespace P520231_JoselinM.Formularios
             Application.Exit();
         }
 
-        private void tipoDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void gestionDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!Globales.MiFormGestionUsuarios.Visible)
+            {
+                Globales.MiFormGestionUsuarios = new FrmUsuariosGestion();
+
+                Globales.MiFormGestionUsuarios.Show();
+            }
 
         }
     }
