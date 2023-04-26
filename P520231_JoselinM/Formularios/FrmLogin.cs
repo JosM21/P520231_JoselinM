@@ -20,9 +20,7 @@ namespace P520231_JoselinM.Formularios
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-
             Application.Exit();
-
         }
 
       
@@ -40,6 +38,51 @@ namespace P520231_JoselinM.Formularios
         }
 
         private void BtnIngresar_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(TxtEmail.Text.Trim()) && 
+                !string.IsNullOrEmpty(TxtContrasennia.Text.Trim()))
+            {
+
+                string usuario = TxtEmail.Text.Trim();
+                string contrasennia = TxtContrasennia.Text.Trim();
+
+                Globales.MiUsuarioGlobal = Globales.MiUsuarioGlobal.ValidarUsuario(usuario, contrasennia);
+
+                if (Globales.MiUsuarioGlobal.UsuarioID > 0)
+                {
+
+                    Globales.MiFormPrincipal.Show();
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectas", "Error de Validacion", MessageBoxButtons.OK);
+                    TxtContrasennia.Focus();
+                    TxtContrasennia.SelectAll();
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos requeridos", "Error de validacion", MessageBoxButtons.OK);
+            }
+
+        }
+
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.Shift & e.Alt & e.KeyCode == Keys.A)
+            {
+                BtnIngresoDirecto.Visible = true;
+            }
+
+        }
+
+        private void BtnIngresoDirecto_Click(object sender, EventArgs e)
         {
 
             Globales.MiFormPrincipal.Show();

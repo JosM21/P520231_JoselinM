@@ -13,6 +13,12 @@ namespace P520231_JoselinM
 
         public static Formularios.FrmUsuariosGestion MiFormGestionUsuarios = new Formularios.FrmUsuariosGestion();
 
+        public static Logica.Models.Usuario MiUsuarioGlobal = new Logica.Models.Usuario();
+
+        public static Formularios.FrmRegistroCompra MiFrmRegistroCompra = new Formularios.FrmRegistroCompra();
+
+        public static Formularios.FrmProveedor MiFrmProveedror = new Formularios.FrmProveedor();
+
 
     }
 }

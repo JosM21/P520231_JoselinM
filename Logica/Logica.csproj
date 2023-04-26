@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crypto.cs" />
     <Compile Include="Modelos\CategoriaProducto.cs" />
+    <Compile Include="Modelos\Proveedor.cs" />
     <Compile Include="Modelos\TipoCompra.cs" />
     <Compile Include="Modelos\TipoProveedor.cs" />
     <Compile Include="Modelos\Usuario.cs" />

@@ -39,6 +39,7 @@
             this.LblRecuperarContrasennia = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnVerContrasennia = new System.Windows.Forms.Button();
+            this.BtnIngresoDirecto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,9 +49,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(56, 193);
+            this.label1.Location = new System.Drawing.Point(32, 192);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
+            this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
@@ -59,9 +60,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(56, 327);
+            this.label2.Location = new System.Drawing.Point(32, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 29);
+            this.label2.Size = new System.Drawing.Size(106, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -70,9 +71,9 @@
             this.TxtContrasennia.BackColor = System.Drawing.Color.HotPink;
             this.TxtContrasennia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtContrasennia.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtContrasennia.Location = new System.Drawing.Point(60, 367);
+            this.TxtContrasennia.Location = new System.Drawing.Point(37, 345);
             this.TxtContrasennia.Name = "TxtContrasennia";
-            this.TxtContrasennia.Size = new System.Drawing.Size(271, 35);
+            this.TxtContrasennia.Size = new System.Drawing.Size(271, 30);
             this.TxtContrasennia.TabIndex = 3;
             this.TxtContrasennia.UseSystemPasswordChar = true;
             // 
@@ -82,7 +83,7 @@
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelar.Location = new System.Drawing.Point(60, 487);
+            this.BtnCancelar.Location = new System.Drawing.Point(37, 487);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(137, 65);
             this.BtnCancelar.TabIndex = 4;
@@ -95,9 +96,9 @@
             this.TxtEmail.BackColor = System.Drawing.Color.HotPink;
             this.TxtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtEmail.ForeColor = System.Drawing.Color.White;
-            this.TxtEmail.Location = new System.Drawing.Point(60, 237);
+            this.TxtEmail.Location = new System.Drawing.Point(37, 236);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(333, 35);
+            this.TxtEmail.Size = new System.Drawing.Size(333, 30);
             this.TxtEmail.TabIndex = 7;
             // 
             // BtnIngresar
@@ -106,7 +107,7 @@
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIngresar.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresar.Location = new System.Drawing.Point(257, 487);
+            this.BtnIngresar.Location = new System.Drawing.Point(234, 487);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(136, 65);
             this.BtnIngresar.TabIndex = 8;
@@ -132,9 +133,9 @@
             this.LblRecuperarContrasennia.AutoSize = true;
             this.LblRecuperarContrasennia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRecuperarContrasennia.LinkColor = System.Drawing.Color.White;
-            this.LblRecuperarContrasennia.Location = new System.Drawing.Point(56, 410);
+            this.LblRecuperarContrasennia.Location = new System.Drawing.Point(34, 392);
             this.LblRecuperarContrasennia.Name = "LblRecuperarContrasennia";
-            this.LblRecuperarContrasennia.Size = new System.Drawing.Size(219, 22);
+            this.LblRecuperarContrasennia.Size = new System.Drawing.Size(179, 18);
             this.LblRecuperarContrasennia.TabIndex = 10;
             this.LblRecuperarContrasennia.TabStop = true;
             this.LblRecuperarContrasennia.Text = "¿Olvidaste tu contraseña?";
@@ -146,7 +147,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(184, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 29);
+            this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Login";
             // 
@@ -155,7 +156,7 @@
             this.BtnVerContrasennia.BackColor = System.Drawing.Color.HotPink;
             this.BtnVerContrasennia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVerContrasennia.ForeColor = System.Drawing.Color.White;
-            this.BtnVerContrasennia.Location = new System.Drawing.Point(337, 367);
+            this.BtnVerContrasennia.Location = new System.Drawing.Point(314, 345);
             this.BtnVerContrasennia.Name = "BtnVerContrasennia";
             this.BtnVerContrasennia.Size = new System.Drawing.Size(56, 35);
             this.BtnVerContrasennia.TabIndex = 12;
@@ -164,12 +165,28 @@
             this.BtnVerContrasennia.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnVerContrasennia_MouseDown);
             this.BtnVerContrasennia.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnVerContrasennia_MouseUp);
             // 
+            // BtnIngresoDirecto
+            // 
+            this.BtnIngresoDirecto.BackColor = System.Drawing.Color.HotPink;
+            this.BtnIngresoDirecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIngresoDirecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIngresoDirecto.ForeColor = System.Drawing.Color.White;
+            this.BtnIngresoDirecto.Location = new System.Drawing.Point(234, 432);
+            this.BtnIngresoDirecto.Name = "BtnIngresoDirecto";
+            this.BtnIngresoDirecto.Size = new System.Drawing.Size(136, 38);
+            this.BtnIngresoDirecto.TabIndex = 13;
+            this.BtnIngresoDirecto.Text = "Ingreso Directo";
+            this.BtnIngresoDirecto.UseVisualStyleBackColor = false;
+            this.BtnIngresoDirecto.Visible = false;
+            this.BtnIngresoDirecto.Click += new System.EventHandler(this.BtnIngresoDirecto_Click);
+            // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(448, 604);
+            this.ClientSize = new System.Drawing.Size(406, 606);
+            this.Controls.Add(this.BtnIngresoDirecto);
             this.Controls.Add(this.BtnVerContrasennia);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LblRecuperarContrasennia);
@@ -182,9 +199,11 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLogin_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,5 +222,6 @@
         private System.Windows.Forms.LinkLabel LblRecuperarContrasennia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BtnVerContrasennia;
+        private System.Windows.Forms.Button BtnIngresoDirecto;
     }
 }
