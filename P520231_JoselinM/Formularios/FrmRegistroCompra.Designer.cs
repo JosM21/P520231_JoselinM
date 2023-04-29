@@ -50,9 +50,9 @@
             this.TxtNotas = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnCrearCompra = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtTotalCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvLista)).BeginInit();
@@ -168,6 +168,7 @@
             this.BtnProductoAgregar.Name = "BtnProductoAgregar";
             this.BtnProductoAgregar.Size = new System.Drawing.Size(193, 32);
             this.BtnProductoAgregar.Text = "Agregar Producto";
+            this.BtnProductoAgregar.Click += new System.EventHandler(this.BtnProductoAgregar_Click);
             // 
             // BtnProductoModificar
             // 
@@ -178,6 +179,7 @@
             this.BtnProductoModificar.Name = "BtnProductoModificar";
             this.BtnProductoModificar.Size = new System.Drawing.Size(206, 32);
             this.BtnProductoModificar.Text = "Modificar Producto";
+            this.BtnProductoModificar.Click += new System.EventHandler(this.BtnProductoModificar_Click);
             // 
             // BtnProductoEliminar
             // 
@@ -203,8 +205,10 @@
             this.TxtProveedorNombre.BackColor = System.Drawing.Color.HotPink;
             this.TxtProveedorNombre.Location = new System.Drawing.Point(159, 50);
             this.TxtProveedorNombre.Name = "TxtProveedorNombre";
+            this.TxtProveedorNombre.ReadOnly = true;
             this.TxtProveedorNombre.Size = new System.Drawing.Size(644, 30);
             this.TxtProveedorNombre.TabIndex = 1;
+            this.TxtProveedorNombre.TextChanged += new System.EventHandler(this.TxtProveedorNombre_TextChanged);
             // 
             // BtnProveedorBuscar
             // 
@@ -216,6 +220,7 @@
             this.BtnProveedorBuscar.TabIndex = 2;
             this.BtnProveedorBuscar.Text = "Buscar...";
             this.BtnProveedorBuscar.UseVisualStyleBackColor = false;
+            this.BtnProveedorBuscar.Click += new System.EventHandler(this.BtnProveedorBuscar_Click);
             // 
             // TxtTipoCompra
             // 
@@ -270,15 +275,15 @@
             this.TxtNotas.Multiline = true;
             this.TxtNotas.Name = "TxtNotas";
             this.TxtNotas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TxtNotas.Size = new System.Drawing.Size(644, 72);
+            this.TxtNotas.Size = new System.Drawing.Size(644, 90);
             this.TxtNotas.TabIndex = 6;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.BtnCrearCompra);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.TxtTotal);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.TxtTotalCantidad);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
@@ -300,19 +305,20 @@
             this.BtnCrearCompra.TabIndex = 3;
             this.BtnCrearCompra.Text = "Crear Compra";
             this.BtnCrearCompra.UseVisualStyleBackColor = false;
+            this.BtnCrearCompra.Click += new System.EventHandler(this.BtnCrearCompra_Click_1);
             // 
-            // textBox2
+            // TxtTotal
             // 
-            this.textBox2.BackColor = System.Drawing.Color.HotPink;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(538, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(254, 30);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtTotal.BackColor = System.Drawing.Color.HotPink;
+            this.TxtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal.ForeColor = System.Drawing.SystemColors.Window;
+            this.TxtTotal.Location = new System.Drawing.Point(538, 70);
+            this.TxtTotal.Name = "TxtTotal";
+            this.TxtTotal.ReadOnly = true;
+            this.TxtTotal.Size = new System.Drawing.Size(254, 30);
+            this.TxtTotal.TabIndex = 3;
+            this.TxtTotal.Text = "0";
+            this.TxtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -325,18 +331,18 @@
             this.label4.Text = "Total";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // TxtTotalCantidad
             // 
-            this.textBox1.BackColor = System.Drawing.Color.HotPink;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(167, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(210, 30);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtTotalCantidad.BackColor = System.Drawing.Color.HotPink;
+            this.TxtTotalCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotalCantidad.ForeColor = System.Drawing.SystemColors.Window;
+            this.TxtTotalCantidad.Location = new System.Drawing.Point(167, 70);
+            this.TxtTotalCantidad.Name = "TxtTotalCantidad";
+            this.TxtTotalCantidad.ReadOnly = true;
+            this.TxtTotalCantidad.Size = new System.Drawing.Size(210, 30);
+            this.TxtTotalCantidad.TabIndex = 1;
+            this.TxtTotalCantidad.Text = "0";
+            this.TxtTotalCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -394,9 +400,9 @@
         private System.Windows.Forms.DataGridView DgvLista;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button BtnCrearCompra;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtTotal;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtTotalCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProductoID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProductoCodigoBarras;

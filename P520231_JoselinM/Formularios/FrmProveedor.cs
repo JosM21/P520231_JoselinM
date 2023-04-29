@@ -63,12 +63,12 @@ namespace P520231_JoselinM.Formularios
             Logica.Modelos.Proveedor MiProveedor = new Logica.Modelos.Proveedor();
 
             DataTable dataTable = new DataTable();
-            dataTable = MiProveedor.Listar();
+            dataTable = MiProveedor.Listar(true, TxtBuscar.Text.Trim());
 
 
             if (dataTable.Rows.Count > 0)
             {
-                ListarProveedor = MiPoveedorLocal.Listar();
+                ListarProveedor = MiPoveedorLocal.Listar(true, TxtBuscar.Text.Trim());
 
             }
 

@@ -75,11 +75,11 @@ namespace P520231_JoselinM.Formularios
         private void gestionDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (!Globales.MiFrmProveedror.Visible)
+            if (!Globales.MiFrmProveedor.Visible)
             {
-                Globales.MiFrmProveedror = new FrmProveedor();
+                Globales.MiFrmProveedor = new FrmProveedor();
 
-                Globales.MiFrmProveedror.Show();
+                Globales.MiFrmProveedor.Show();
             }
         }
     }

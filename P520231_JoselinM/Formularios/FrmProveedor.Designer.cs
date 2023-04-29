@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.CbTipoProveedor = new System.Windows.Forms.ComboBox();
             this.TxtNotas = new System.Windows.Forms.TextBox();
             this.TxtCorreo = new System.Windows.Forms.TextBox();
@@ -50,7 +51,7 @@
             this.CProveedorCedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CProveedorEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CProveedorTipoDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
+            this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgLista)).BeginInit();
             this.SuspendLayout();
@@ -79,6 +80,15 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detale de Proveedor:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 25);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Direccion";
             // 
             // CbTipoProveedor
             // 
@@ -245,6 +255,7 @@
             this.DgLista.Location = new System.Drawing.Point(12, 239);
             this.DgLista.Name = "DgLista";
             this.DgLista.ReadOnly = true;
+            this.DgLista.RowHeadersVisible = false;
             this.DgLista.RowHeadersWidth = 51;
             this.DgLista.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DgLista.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Blue;
@@ -267,12 +278,12 @@
             // 
             // CProveedorNombre
             // 
+            this.CProveedorNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CProveedorNombre.DataPropertyName = "ProveedorNombre";
             this.CProveedorNombre.HeaderText = "Nombre";
             this.CProveedorNombre.MinimumWidth = 6;
             this.CProveedorNombre.Name = "CProveedorNombre";
             this.CProveedorNombre.ReadOnly = true;
-            this.CProveedorNombre.Width = 125;
             // 
             // CProveedorCedula
             // 
@@ -290,7 +301,7 @@
             this.CProveedorEmail.MinimumWidth = 6;
             this.CProveedorEmail.Name = "CProveedorEmail";
             this.CProveedorEmail.ReadOnly = true;
-            this.CProveedorEmail.Width = 125;
+            this.CProveedorEmail.Width = 150;
             // 
             // CProveedorTipoDescripcion
             // 
@@ -301,14 +312,12 @@
             this.CProveedorTipoDescripcion.ReadOnly = true;
             this.CProveedorTipoDescripcion.Width = 125;
             // 
-            // label4
+            // TxtBuscar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 25);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Direccion";
+            this.TxtBuscar.Location = new System.Drawing.Point(294, 520);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(100, 22);
+            this.TxtBuscar.TabIndex = 11;
             // 
             // FrmProveedor
             // 
@@ -316,6 +325,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(933, 572);
+            this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.DgLista);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.BtnAgregar);
@@ -328,6 +338,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgLista)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -350,11 +361,12 @@
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.DataGridView DgLista;
         private System.Windows.Forms.TextBox TxtDireccion;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProveedorID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProveedorNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProveedorCedula;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProveedorEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn CProveedorTipoDescripcion;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox TxtBuscar;
     }
 }

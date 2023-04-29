@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica.Services;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -16,7 +17,9 @@ namespace Logica.Models
         {
             DataTable R = new DataTable();
 
-            //acá va el código funcional que carga la lista de categorías 
+            Conexion MiCnn = new Conexion();
+
+            R = MiCnn.EjecutarSELECT("SPTipoCompraListar");
 
             return R;
         }
